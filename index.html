@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/clear.png" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name..." />
+        <button>
+          <img src="./img/search.png" alt="">
+          <i class="fas fa-search"></i> <!-- Font Awesome Search Icon -->
+        </button>
+      </div>
+      <div class="error">
+        <p>Invalid city name.</p>
+      </div>
+      <div class="weather">
+        <img src="./img/rain.png" class="weather-icon" alt="" />
+        <h1 class="temp">..°C</h1>
+        <h2 class="city">(City's Name)</h2>
+        <div class="weather-description">
+          <p class="description">Clear Sky</p>
+        </div>
+        <div class="details">
+          <div class="col">
+            <img src="./img/humidity.png" alt="" />
+            <div>
+              <p class="humidity">..%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./img/wind.png" alt="" />
+            <div>
+              <p class="wind">.. km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./img/pressure.png" alt="" />
+            <div>
+              <p class="pressure">.... hPa</p>
+              <p>Pressure</p>
+            </div>
+          </div>
+        </div>
+        <div class="temperature-range">
+          <p>Min Temp: <span class="min-temp">..°C</span></p>
+          <p>Max Temp: <span class="max-temp">..°C</span></p>
+        </div>
+        <div class="sunrise-sunset">
+          <p>Sunrise: <span class="sunrise-time">00:00 AM</span></p>
+          <p>Sunset: <span class="sunset-time">00:00 PM</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
